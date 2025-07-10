@@ -1,12 +1,14 @@
-import { Component, input } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Buttons } from './buttons/buttons';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,],
+  imports: [RouterOutlet, Buttons],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  input: String = '0';
+  input: String = '';
+  result: String = '';
 }
