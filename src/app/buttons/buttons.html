@@ -1,1 +1,37 @@
-<p>buttons works!</p>
+<div class="column">
+<div class="row">
+    @for (key of ['c/on', 'off', 'RM', 'M', '÷']; track key) {
+  <button (click)="pressKey(key)">
+    {{ key }}
+  </button>
+    }    
+</div>
+<div>
+    @for (key of ['EXP', '7', '8', '9', 'X']; track key) {
+  <button (click)="pressKey(key)">
+    {{ key }}
+  </button>
+    }    
+</div>
+<div class="row">
+    @for (key of ['MR◇','4','5','6','-']; track key) {
+  <button (click)="pressKey(key)">
+    {{ key }}
+  </button>
+    }
+</div>
+<div class="row">
+    @for (key of ['M-','1','2','3','+']; track key) {
+  <button (click)="pressKey(key)">
+    {{ key }}
+  </button>
+    }
+</div>
+<div class="row">
+    @for (key of ['M+','•','0','π','=']; track key) {
+  <button (click)="pressKey(key)">
+    {{ key }}
+  </button>
+    }
+</div>
+</div>

@@ -9,6 +9,4 @@ import { Buttons } from './buttons/buttons';
   styleUrl: './app.css'
 })
 export class App {
-  input: String = '';
-  result: String = '';
 }
